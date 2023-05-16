@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+/*Backup*/
+ul,
+ol,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+p,
+img,
+span {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans";
+}
+
+body {
+  background-color: var(--background);
+  background-image: url(../assets/side-image.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 90vh 100vh;
+}
+
+/*Mobile First*/
+header .logo {
+  display: flex;
+  margin: 2.5em;
+}
+header .logo img {
+  width: 40px;
+  height: 35px;
+  color: white;
+}
+header .logo h1 {
+  font-family: "Poppins";
+  margin-top: 0.2em;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 27px;
+  color: var(--text-title);
+}
+
+#forms {
+  display: flex;
+}
+#forms .login {
+  width: 590px;
+  height: 550px;
+  background: #24221F;
+  border-radius: 8px;
+  margin-left: 15em;
+  margin-top: 7em;
+}
+#forms .login h1 {
+  font-family: "Poppins";
+  padding-top: 1em;
+  margin-left: 5.3em;
+  padding-top: 2em;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--text-title);
+}
+#forms .login h1 i {
+  color: var(--primary-color);
+  margin-right: 0.5em;
+  width: 24px;
+  height: 24px;
+}
+#forms .login p {
+  font-family: "Roboto";
+  color: var(--text-base);
+  margin-left: 7.8em;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+#forms .login-mail {
+  margin-top: 1.8em;
+  margin-left: 7em;
+}
+#forms .login-mail label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-base);
+  margin-left: 0.9em;
+}
+#forms .login-mail span button {
+  color: var(--text-base);
+  position: relative;
+  top: 1.6em;
+  right: 1.9em;
+  font-size: 1.5em;
+}
+#forms .login-mail input {
+  font-family: "Roboto";
+  margin-left: 0.9em;
+  display: block;
+  width: 335px;
+  height: 44px;
+  padding-top: 0.1em;
+  padding-left: 48px;
+  border: 1px solid #afb6c2;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+#forms .login-mail input:focus {
+  box-shadow: 0px 0px 0px 1px #ffc632;
+  outline: 0;
+}
+#forms .login-mail input:hover {
+  color: #ffc632;
+}
+#forms .login-password {
+  margin-left: 7em;
+}
+#forms .login-password label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-base);
+  margin-left: 0.9em;
+}
+#forms .login-password #lock button {
+  color: var(--text-base);
+  position: relative;
+  top: 1.6em;
+  right: 1.9em;
+  font-size: 1.5em;
+}
+#forms .login-password #eye button {
+  color: var(--text-base);
+  position: relative;
+  left: 13em;
+  bottom: 2.2em;
+  font-size: 1.5em;
+}
+#forms .login-password input {
+  font-family: "Roboto";
+  margin-left: 0.9em;
+  display: block;
+  width: 335px;
+  height: 44px;
+  padding-top: 0.1em;
+  padding-left: 40px;
+  border: 1px solid #afb6c2;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+#forms .login-password input:focus {
+  box-shadow: 0px 0px 0px 1px #ffc632;
+  outline: 0;
+}
+#forms .login-password input:hover {
+  color: #ffc632;
+}
+#forms .login-check {
+  display: flex;
+  margin-left: 7em;
+}
+#forms .login-check label {
+  margin-bottom: 2em;
+}
+#forms .login-check label span {
+  font-family: "Roboto";
+  position: relative;
+  color: var(--text-base);
+  padding-left: 0.5em;
+  font-size: 16px;
+  margin-right: 2.4em;
+  bottom: 0.3em;
+}
+#forms .login-check label input {
+  margin-left: 1.6em;
+  width: 20px;
+  height: 20px;
+  border: solid 1px var(--text-base);
+  border-radius: 4px;
+  appearance: none;
+  border: solid 1px --text-base;
+  cursor: pointer;
+}
+#forms .login-check label input:checked {
+  border: solid 1px var(--text-base);
+  background-color: #ffc632;
+  width: 20px;
+  height: 20px;
+}
+#forms .login-check label input:checked + span {
+  color: var(--primary-color);
+}
+#forms .login-check a {
+  font-family: "Poppins";
+  color: var(--primary-color);
+  margin-left: 2em;
+  font-size: 15px;
+  margin-top: 0em;
+}
+#forms .login-btn {
+  margin-left: 7em;
+}
+#forms .login-btn button {
+  font-family: "Poppins";
+  font-weight: bold;
+  width: 334px;
+  height: 51px;
+  background-color: var(--primary-color);
+  margin-left: 1.5em;
+  border: 1px solid;
+  border-radius: 8px;
+}
+#forms .login-btn h3 {
+  font-family: "Roboto";
+  color: var(--primary-color);
+  font-size: 14px;
+  margin-left: 5.8em;
+  margin-top: 1em;
+  font-style: none;
+  line-height: 21px;
+}
+#forms .login-btn h3 span {
+  font-family: "Poppins";
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  body {
+    background-image: none;
+  }
+  #forms .login {
+    background: transparent;
+    margin-left: 7em;
+    margin-top: 5em;
+  }
+}
+@media (max-width: 480px) {
+  header .logo {
+    display: flex;
+    margin: 3em;
+  }
+  header .logo img {
+    width: 60px;
+    height: 55px;
+    color: white;
+  }
+  header .logo h1 {
+    font-size: 40px;
+  }
+  #forms {
+    display: block;
+  }
+  #forms .login {
+    width: 590px;
+    height: 600px;
+    background: transparent;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-top: auto;
+  }
+  #forms .login h1 {
+    font-size: 35px;
+    margin-left: 2em;
+  }
+  #forms .login p {
+    margin-left: 5em;
+    font-size: 20px;
+    line-height: 29px;
+  }
+  #forms .login-mail {
+    margin-left: 5.5em;
+  }
+  #forms .login-mail input {
+    font-size: 1.2rem;
+  }
+  #forms .login-password {
+    margin-left: 5.5em;
+  }
+  #forms .login-password input {
+    font-size: 1.2rem;
+  }
+  #forms .login-check {
+    margin-left: 5em;
+  }
+  #forms .login-check label span {
+    font-size: 18px;
+    bottom: 0.2em;
+  }
+  #forms .login-btn {
+    margin-left: 4.8em;
+  }
+  #forms .login-btn button {
+    width: 338px;
+    height: 55px;
+    font-size: 18px;
+  }
+  #forms .login-btn h3 {
+    font-size: 18px;
+    margin-left: 3.2em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
